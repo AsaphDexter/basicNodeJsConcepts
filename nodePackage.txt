@@ -1,0 +1,53 @@
+Node.js Package Manager
+Node Package Manager provides two main functionalities:
+
+It provides online repositories for node.js packages/modules which are searchable on search.nodejs.org
+It also provides command line utility to install Node.js packages, do version management and dependency management of Node.js packages.
+The npm comes bundled with Node.js installables in versions after that v0.6.3. You can check the version by opening Node.js command prompt and typing the following command:
+
+npm  version  
+Node.js Package Manager 1
+Installing Modules using npm
+Following is the syntax to install any Node.js module:
+
+npm install <Module Name>  
+Let's install a famous Node.js web framework called express:
+
+Open the Node.js command prompt and execute the following command:
+
+npm install express  
+You can see the result after installing the "express" framework.
+
+Node.js Package Manager 2
+Global vs Local Installation
+By default, npm installs dependency in local mode. Here local mode specifies the folder where Node application is present. For example if you installed express module, it created node_modules directory in the current directory where it installed express module.
+
+Node.js Package Manager 3
+You can use npm ls command to list down all the locally installed modules.
+
+Open the Node.js command prompt and execute "npm ls":
+
+Node.js Package Manager 4
+Globally installed packages/dependencies are stored in system directory. Let's install express module using global installation. Although it will also produce the same result but modules will be installed globally.
+
+Open Node.js command prompt and execute the following code:
+
+npm install express -g  
+Node.js Package Manager 5
+Here first line tells about the module version and its location where it is getting installed.
+
+Uninstalling a Module
+To uninstall a Node.js module, use the following command:
+
+npm uninstall express  
+Node.js Package Manager 6
+The Node.js module is uninstalled. You can verify by using the following command:
+
+npm ls  
+Node.js Package Manager 7
+You can see that the module is empty now.
+
+Searching a Module
+"npm search express" command is used to search express or module.
+
+npm search express  
